@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e5a3ee, #e6dfdf);
+      font-family: Arial, sans-serif;
+    }
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 50px auto;
+    }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #5a0d64;
+    }
+    .btn-submit {
+      background-color: #5a0d64;
+      color: white;
+      border: none;
+    }
+    .btn-submit:hover {
+      background-color: #3a063f;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-form">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-submit btn-block">Enviar</button>
+    </form>
+    <p id="successMessage" style="display:none; color: green; text-align:center; margin-top:10px;">¡Mensaje enviado correctamente!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
