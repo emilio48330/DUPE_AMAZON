@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Productos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+            background-color: white;
+        }
+        .carousel-item {
+            height: 200px;
+        }
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .offer-row {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .offer-item {
+            margin-right: 20px;
+            text-align: center;
+        }
+        .offer-img {
+            height: 100px;
+            object-fit: cover;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Galería de Productos</h1>
+
+        <!-- Primera fila de productos -->
+        <div class="row">
+            <!-- Producto 1 con Slider -->
+            <div class="col-md-3 product-card">
+                <div class="card h-100">
+                    <div id="carouselProducto1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/564x/fa/d0/f2/fad0f29fdd37a2c48c872fe0906b0095.jpg" class="d-block w-100 product-img" alt="Producto 1 Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/24/9a/b1/249ab1f1fdbc2b40dd46eb7ceeee7a7b.jpg" class="d-block w-100 product-img" alt="Producto 1 Imagen 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselProducto1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselProducto1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Legend of Zelda</h5>
+                        <p class="card-text">The Legend of Zelda Nuevo, para switch</p>
+                        <h5 class="card-price">$24.99</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 con Slider -->
+            <div class="col-md-3 product-card">
+                <div class="card h-100">
+                    <div id="carouselProducto2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/564x/95/1d/9c/951d9c6b3dcfda275538c922f8f0cd2b.jpg" class="d-block w-100 product-img" alt="Producto 2 Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/1e/f4/61/1ef4617ab15c4de40916b2d5d0c72124.jpg" class="d-block w-100 product-img" alt="Producto 2 Imagen 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselProducto2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselProducto2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Subtítulo o descripción del producto 2.</p>
+                        <h5 class="card-price">$19.99</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 con Imagen Estática -->
+            <div class="col-md-3 product-card">
+                <div class="card h-100">
+                    <img class="card-img-top product-img" src="https://i.pinimg.com/564x/f3/0c/94/f30c9439da536d5b32544ee02111c171.jpg" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Subtítulo o descripción del producto 3.</p>
+                        <h5 class="card-price">$29.99</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 con Slider -->
+            <div class="col-md-3 product-card">
+                <div class="card h-100">
+                    <div id="carouselProducto4" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/564x/61/1b/c1/611bc1b21475b0f9891caf6bf81d9a22.jpg" class="d-block w-100 product-img" alt="Producto 4 Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/3d/c1/b2/3dc1b2fa541d0e154a0d4988a0d5ab2b.jpg" class="d-block w-100 product-img" alt="Producto 4 Imagen 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselProducto4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselProducto4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 4</h5>
+                        <p class="card-text">Subtítulo o descripción del producto 4.</p>
+                        <h5 class="card-price">$34.99</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila de ofertas de dispositivos -->
+        <div class="offer-row">
+            <h2>Ofertas en dispositivos</h2>
+            <div class="d-flex overflow-auto">
+                <div class="offer-item">
+                    <img src="https://i.pinimg.com/564x/9e/8f/3a/9e8f3a974bd97d9515be87ee6a83f34e.jpg" class="offer-img" alt="Oferta 1">
+                    <h5>Oferta 1</h5>
+                    <p>Descripción de la oferta 1.</p>
+                    <h5 class="offer-price">$9.99</h5>
+                </div>
+                <div class="offer-item">
+                    <img src="https://i.pinimg.com/564x/9e/2d/4d/9e2d4dfa6932637628d1b8a8b7819192.jpg" class="offer-img" alt="Oferta 2">
+                    <h5>Oferta 2</h5>
+                    <p>Descripción de la oferta 2.</p>
+                    <h5 class="offer-price">$14.99</h5>
+                </div>
+                <div class="offer-item">
+                    <img src="https://i.pinimg.com/564x/26/42/1a/26421a6ecc787d6cb181b8fc7315d16a.jpg" class="offer-img" alt="Oferta 3">
+                    <h5>Oferta 3</h5>
+                    <p>Descripción de la oferta 3.</p>
+                    <h5 class="offer-price">$19.99</h5>
+                </div>
+                <div class="offer-item">
+                    <img src="https://i.pinimg.com/736x/40/ee/41/40ee41af114a2a30950ccc2baff261ba.jpg" class="offer-img" alt="Oferta 4">
+                    <h5>Oferta 4</h5>
+                    <p>Descripción de la oferta 4.</p>
+                    <h5 class="offer-price">$24.99</h5>
+                </div>
+              <div class="offer-item">
+                  <img src="https://i.pinimg.com/564x/42/d9/51/42d951bdb0719dae5c1a39d720a159c3.jpg" class="offer-img" alt="Oferta 5">
+                  <h5>Oferta 5</h5>
+                  <p>Descripción de la oferta 4.</p>
+                  <h5 class="offer-price">$24.99</h5>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
